@@ -1,4 +1,5 @@
 from lib.calculator import sum, minus, multiply, divide 
+from lib.quotes import get_todays_random_quote
 
 
 def main():
@@ -28,6 +29,9 @@ def main():
             except ValueError as e:
                 print("Invalid input:", e)
         elif choice == '5':
+            quote = get_todays_random_quote()
+            print(quote['quote'])
+        elif choice.lower() == 'exit':
             break
         else:
             print("Invalid Input:", choice)

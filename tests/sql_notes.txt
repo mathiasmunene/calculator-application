@@ -1,0 +1,28 @@
+Database => "centralized" (means of info access) structure for sharing information.
+     is a structure of stored information (processed and unprocessed)
+Distributed Database 
+
+Uses 
+- Persisting information across resources
+- 
+
+Types
+1. Relational (SQL) ->Store Data in rows and columns (Tables) -> SQLite, MySQL/MariaDB, PostgreSQL, MSSQL SERVER, OracleDB (PL/SQL)
+2. Non-Relational (NoSQL) -> Info is stored in document structure (JSON objects) -> MongoDB, CouchDB, Couchbase DB.,Firestone ,Firebase realtime Database ...
+3. Key-Value Store -> Store info that need quick access e.g server cache's -> redis
+4. Graph databases -> Store info in form of nodes (with their corresponding relationships) ->Neo4j
+
+Relational databases
+-Data is stored in tables (rows and columns)
+columns represent the different properties each entity can have
+rows a single unit of databases
+
+Database Entities have types:
+1. text => They store alpha-numeric characters.
+2. interger (INT) => numbers
+3. big inter (BIGINT) (LONG) => larger numbers
+4. float (FLOAT) => floating point mumber
+5. double (DOUBLE) => bigger float
+6. variable character (VARCHAR) => Similar to text but must have a character limit specified
+7. boolean (BOOL {true,false}) / (TINYINT 0,1) ~ (BOOLEAN)=> Boolean values
+8. BLOB => Allow for storage of any binary file
